@@ -1,0 +1,7 @@
+
+Iterator design pattern in the Spring Framework
+
+The Spring Framework also extends the Iterator pattern through the CompositeIterator class.
+Mainly this pattern used in the Collection Framework of Java for iterating the elements in sequence.
+
+Dinesh Rajput. Spring 5 Design Patterns (Kindle Locations 2364-2367). Packt.

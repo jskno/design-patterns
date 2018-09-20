@@ -1,0 +1,65 @@
+
+Avoid coupling the sender of a request to its receiver by giving more than one object a chance to handle
+the request. Chain the receiving objects and pass the request along the chain until an object handles it.
+ -GOF Design Patterns
+
+Dinesh Rajput. Spring 5 Design Patterns (Kindle Locations 2279-2281). Packt.
+
+//////////////////////////////
+
+1. Implementation Principles
+
+We need to keep few important principles in mind while implementing Chain of Responsibility:
+
+    *   Each processor in the chain will have its implementation for processing a command
+        - In our example above, all processors have their implementation of isAuthorized
+    *   Every processor in the chain should have reference to the next processor
+        - Above, UsernamePasswordProcessor delegates to OAuthProcessor
+    *   Each processor is responsible for delegating to the next processor so beware of dropped commands
+        - Again in our example, if the command is an instance of SamlProvider then the request may not
+         get processed and will be unauthorized
+    *   Processors should not form a recursive cycle
+        - In our example, we don’t have a cycle in our chain: UsernamePasswordProcessor -> OAuthProcessor.
+         But, if we explicitly set UsernamePasswordProcessor as next processor of OAuthProcessor, then we
+         end up with a cycle in our chain:
+         UsernamePasswordProcessor -> OAuthProcessor -> UsernamePasswordProcessor.
+         Taking the next processor in the constructor can help with this
+    *   Only one processor in the chain handles a given command
+        - In our example, if an incoming command contains an instance of OAuthTokenProvider, then
+         only OAuthProcessor will handle the command
+
+2. Usage in the Real World
+
+In the Java world, we benefit from Chain of Responsibility every day. One such classic example is Servlet
+Filters in Java that allow multiple filters to process an HTTP request.
+Though in that case, each filter invokes the chain instead of the next filter.
+
+Let’s take a look at the code snippet below for better understanding of this pattern in Servlet Filters:
+
+    public class CustomFilter implements Filter {
+
+        public void doFilter(
+          ServletRequest request,
+          ServletResponse response,
+          FilterChain chain)
+          throws IOException, ServletException {
+
+            // process the request
+
+            // pass the request (i.e. the command) along the filter chain
+            chain.doFilter(request, response);
+        }
+    }
+
+As seen in the code snippet above, we need to invoke FilterChain‘s doFilter method in order to pass
+the request on to next processor in the chain.
+
+3. Disadvantages
+
+And now that we’ve seen how interesting Chain of Responsibility is, let’s keep in mind some drawbacks:
+
+    * Mostly, it can get broken easily:
+        - if a processor fails to call the next processor, the command gets dropped
+        - if a processor calls the wrong processor, it can lead to a cycle
+    * It can create deep stack traces, which can affect performance
+    * It can lead to duplicate code across processors, increasing maintenance

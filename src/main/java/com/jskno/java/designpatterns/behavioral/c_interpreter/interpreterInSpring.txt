@@ -1,0 +1,6 @@
+
+Interpreter design pattern in the Spring Framework In the Spring Framework, Interpreter pattern is used with the
+Spring Expression Language (SpEL). Spring added this new feature from Spring 3.0, you can use it in your enterprise
+application using the Spring Framework.
+
+Dinesh Rajput. Spring 5 Design Patterns (Kindle Locations 2344-2347). Packt.

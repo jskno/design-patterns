@@ -1,0 +1,13 @@
+
+Decorator design pattern in the Spring Framework
+
+The Spring Framework uses the Decorator design pattern to build important functionalities such as transactions,
+cache synchronization, and security-related tasks.
+Let's look at some functionalities where Spring implements this pattern transparently:
+
+    * Weaving the advice into the Spring application. It uses the Decorator pattern via the CGLib proxy.
+    It works by generating a subclass of the target class at runtime.
+    * BeanDefinitionDecorator : It is used to decorate the bean definition via applied custom attributes.
+    * WebSocketHandlerDecorator: It is used to decorate a WebSocketHandler with additional behaviors.
+
+Dinesh Rajput. Spring 5 Design Patterns (Kindle Locations 2136-2142). Packt.

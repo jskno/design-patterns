@@ -1,0 +1,6 @@
+
+Facade Pattern in the Spring Framework In the enterprise application, if you are working in Spring
+applications, the facade pattern is used commonly in the business service layer of the application
+to consolidate all services. And you could also apply this pattern on DAOs on the persistent layer.
+
+Dinesh Rajput. Spring 5 Design Patterns (Kindle Locations 2226-2229). Packt.

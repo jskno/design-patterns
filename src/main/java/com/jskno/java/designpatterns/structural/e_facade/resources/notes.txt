@@ -1,0 +1,17 @@
+
+Provide a unified interface to a set of interfaces in a subsystem.
+Facade defines a higher-level interface that makes the subsystem easier to use.
+ - GOF Design Patterns
+
+The Facade design pattern is nothing but an interface of interfaces to simplify interactions between
+the client code and subsystem classes.
+This design comes under the GOF structural design pattern.
+
+Benefits of Facade Pattern:
+
+    * This pattern reduces the complexities for clients to interact with subsystems
+    * This pattern consolidates all the business services as single interfaces to make them more
+    understandable
+    * This pattern reduces dependencies of client code on the inner workings of a system
+
+Dinesh Rajput. Spring 5 Design Patterns (Kindle Locations 2145-2146). Packt.

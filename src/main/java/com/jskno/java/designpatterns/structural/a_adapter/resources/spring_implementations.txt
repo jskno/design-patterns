@@ -1,0 +1,11 @@
+JpaVendorAdapter
+HibernateJpaVendorAdapter
+HandlerInterceptorAdapter
+MessageListenerAdapter
+SpringContextResourceAdapter
+ClassPreProcessorAgentAdapter
+RequestMappingHandlerAdapter
+AnnotationMethodHandlerAdapter
+WebMvcConfigurerAdapter
+
+Dinesh Rajput. Spring 5 Design Patterns (Kindle Locations 1755-1760). Packt.

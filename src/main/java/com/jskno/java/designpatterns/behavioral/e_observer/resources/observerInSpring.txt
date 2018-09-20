@@ -1,0 +1,11 @@
+
+Observer pattern in the Spring Framework
+
+In the Spring Framework, the Observer design pattern is used to implement event handling function of
+ApplicationContext. Spring provides us the ApplicationEvent class and ApplicationListener interface to enable
+event handling in Spring ApplicationContext. Any bean in your Spring application implements the
+ApplicationListener interface, it will receive an ApplicationEvent every time the ApplicationEvent
+is published by an event publisher.
+Here, the event publisher is the subject and the bean that implements ApplicationListener is the observer.
+
+Dinesh Rajput. Spring 5 Design Patterns (Kindle Locations 2392-2399). Packt.

@@ -1,0 +1,10 @@
+
+Proxy pattern in the Spring Framework
+
+Spring Framework uses the Proxy design pattern in the Spring AOP module transparently.
+In Spring AOP, you create proxies of the object to apply cross cutting concern across the point cut
+in the Spring application.
+In the Spring, other modules also implement the Proxy pattern, such as RMI, Spring's HTTP Invoker,
+Hessian, and Burlap.
+
+Dinesh Rajput. Spring 5 Design Patterns (Kindle Locations 2267-2272). Packt.

@@ -1,0 +1,29 @@
+Decouple an abstraction from its implementation so that the two can vary independently
+ - GoF Design Patterns: Elements of Reusable Object-Oriented Software
+
+Dinesh Rajput. Spring 5 Design Patterns (Kindle Locations 1813-1814). Packt.
+
+The following Spring modules are based on the Bridge design pattern:
+    ViewRendererServlet: It is a bridge servlet, mainly for Portlet MVC support
+    The Bridge design pattern: The Bridge design pattern is used in the Spring logging process
+
+Dinesh Rajput. Spring 5 Design Patterns (Kindle Locations 1836-1838). Packt.
+
+The Bridge pattern is thus very similar to the Strategy pattern because bridge and strategy
+both plug in member varaibles to detemine behaviour - thus they prefer composition ("has-a")
+over inheritance ("is-a")
+...And also to the Template pattern, since the bridge and template both "plug-in" important
+or complex parts of their behavior.
+If the Bridge pattern is not well-articulated, it can sound a lot like the Adapter pattern.
+
+When class hierarchies get too complicated, they can be simplified using Bridges.
+The Bridge pattern uses composition ("has-a") as a bridge between two independent Class Hierarchies.
+
+The Bridge pattern is a composite of the Template and Strategy patterns.
+
+***********************
+
+Purpose
+To divide a complex component into two separate but related inheritance hierarchies: the
+functional abstraction and the internal implementation. This makes it easier to change either
+aspect of the component.

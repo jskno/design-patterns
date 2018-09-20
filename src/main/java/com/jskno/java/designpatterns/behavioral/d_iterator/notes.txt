@@ -1,0 +1,15 @@
+
+Provide a way to access the elements of an aggregate object sequentially without Exposing its underlying
+representation.
+-GOF Design Pattern
+
+This pattern allows you to access the items from the collection object in sequence without information its internal
+representation.
+
+These are following benefits of the Iterator pattern:
+    *   Easily access the items of the collection.
+    *   You can use multiple to access the item from the collection because it support lot of variations in
+    the traversal.
+    *   It provides a uniform interface for traversing different structures in a collection.
+
+Dinesh Rajput. Spring 5 Design Patterns (Kindle Locations 2350-2351). Packt.

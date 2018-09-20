@@ -1,0 +1,14 @@
+
+Encapsulate a request as an object, thereby letting you parameterize clients with different requests,
+queue or log requests, and support undoable operations
+-GOF Design Patterns
+
+Dinesh Rajput. Spring 5 Design Patterns (Kindle Locations 2305-2306). Packt.
+
+Command design patter allows the requester of a particular action to be decoupled from the object that performs the action.
+
+Lambda expression with Stream, Map, Filter and Foreach operation are a good example of Command pattern
+in action.
+
+Threading also uses the Command pattern at its very core, in fact what you run on a Thread is encapsulated
+in a Runnable which is essentially just a command.

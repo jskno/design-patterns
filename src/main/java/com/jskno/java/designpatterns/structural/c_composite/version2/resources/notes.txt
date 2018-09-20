@@ -1,0 +1,13 @@
+
+Pattern Variants
+
+    Some variations on the base Composite pattern include:
+
+    The root node – To improve manageability in systems, some Composite implementers define a distinct object
+    that acts as the base for the entire Composite object hierarchy. If the root object is represented as a separate class,
+    it can be implemented as a Singleton, or the access to the root node can be granted through a Singleton, without
+    the class itself being a Singleton.
+
+    Rule-based branching – For more complex Composite structures, typically those with multiple types of nodes
+    and branches, you might need to enforce rules about how and when certain kinds of nodes can be joined to certain
+    branch types.

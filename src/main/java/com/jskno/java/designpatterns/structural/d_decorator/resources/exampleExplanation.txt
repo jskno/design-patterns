@@ -1,0 +1,38 @@
+
+Consider that a bank offers multiple accounts with different benefits to customers. It divides the customers
+into three categories--senior citizens, privileged, and young. The bank launches a scheme on the savings
+account for senior citizens--if they open a savings account in this bank, they will be provided medical
+insurance of up to $ 1,000. Similarly, the bank also provides a scheme for the privileged customers as
+an accident insurance of up to $ 1,600 and an overdraft facility of $ 84. There is no scheme for the young.
+
+To address the new requirement, we can add new subclasses of SavingAccount; one each to represent a saving
+account with additional benefits as decoration, and this is what our design looks like now:
+
+(explanation1.jpg)
+
+
+This design will be very complex as I will add more benefit schemes to the SavingAccount, but what would
+happen when the bank launches the same scheme for CurrentAccount? Clearly, this design is flawed, but this
+is an ideal use case for the decorator pattern. This pattern allows you to add runtime dynamic behavior.
+In this case, I will create an abstract AccountDecorator class to implement Account. And furthermore,
+I will create the SeniorCitizen class and Privilege class, which extends AccountDecorator because young
+does not have any extra benefits, so the SavingAccount class does not extend AccountDecorator.
+
+This is how the design
+
+(explanation2.jpg)
+
+Dinesh Rajput. Spring 5 Design Patterns (Kindle Locations 2039-2043). Packt.
+
+The relationship between Account and AccountDecorator is as follows:
+
+    * Is-a relationship between the AccountDecorator and Account, that is, inheritance for the correct
+     type
+    * Has-a relationship between the AccountDecorator and Account, that is, composition in order to add
+     new behavior without changing the existing code
+
+Dinesh Rajput. Spring 5 Design Patterns (Kindle Locations 2057-2061). Packt.
+
+"I used to think real men subclassed everything. That was until I learned the power of extension at runtime,
+rather than at compile time."
+

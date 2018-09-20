@@ -1,0 +1,8 @@
+
+Chain of Responsibility pattern in the Spring Framework Spring Security project implemented the Chain
+of Responsibility pattern in the Spring Framework. Spring Security allows you to implement authentication
+and authorization functionality in your application by using chains of security filters.
+This is a highly configurable framework. You can add your custom filter with this chain of filters to
+customize the functionality because of Chain of Responsibility design pattern.
+
+Dinesh Rajput. Spring 5 Design Patterns (Kindle Locations 2298-2301). Packt.

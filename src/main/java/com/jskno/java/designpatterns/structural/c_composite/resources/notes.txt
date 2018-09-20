@@ -1,0 +1,21 @@
+
+Compose objects into tree structures to represent part-whole hierarchies.
+Composite lets clients treat individual objects and compositions of objects uniformly.
+ -GoF Design Patterns
+
+Dinesh Rajput. Spring 5 Design Patterns (Kindle Locations 1929-1930). Packt.
+
+This pattern solves the challenges faced when creating hierarchical tree structures to provide
+clients with a uniform way to access and manipulate objects in the tree.
+
+Dinesh Rajput. Spring 5 Design Patterns (Kindle Locations 1945-1946). Packt.
+
+This design pattern resolves difficulties and allows you to design objects in such a way
+that you can use that object as a composition of objects and a single individual object.
+
+Dinesh Rajput. Spring 5 Design Patterns (Kindle Locations 1943-1944). Packt.
+
+The Composite Pattern allows you to compose objects into tree structures to
+represent part-whole hierarchies. Composite lets clients treat individual objects and
+compositions of objects uniformly.
+

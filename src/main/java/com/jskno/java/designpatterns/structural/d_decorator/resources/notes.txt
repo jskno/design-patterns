@@ -1,0 +1,35 @@
+
+A Decorator pattern can be used to attach additional responsibilities to an object either statically or dynamically.
+A Decorator provides an enhanced interface to the original object.
+
+In the implementation of this pattern, we prefer composition over an inheritance – so that we can reduce the overhead
+of subclassing again and again for each decorating element.
+The recursion involved with this design can be used to decorate our object as many times as we require.
+
+Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to sub classing
+for extending functionality. - GOF Design Pattern
+
+Dinesh Rajput. Spring 5 Design Patterns (Kindle Locations 2018-2019). Packt.
+
+In software engineering, the common intent of all GOF structural patterns is to simplify the complex relationship
+between objects and classes in a flexible enterprise application. The decorator pattern is a special type of design
+pattern among these that comes under the structural design pattern, which allows you to add and remove behaviors for
+an individual object at runtime dynamically or statically, without changing the existing behavior of other associated
+objects from the same class. This design pattern does this without violating the Single Responsibility
+Principle or the SOLID principle of object-oriented programming.
+
+This design pattern uses the compositions over the inheritance for objects associations; it allows you to divide
+the functionality into different concrete classes with a unique area of concern.
+
+Dinesh Rajput. Spring 5 Design Patterns (Kindle Locations 2020-2026). Packt.
+
+Common problems solved by the Decorator pattern In an enterprise application, there is a business requirement
+or there might be a future plan to extend the behavior of the product by adding new functionalities.
+To achieve this, you could use inheritance to extend the behavior of an object. But inheritance should
+be done at compile time and methods are also available for other instances of that class.
+Because of the code modification, there is a violation of the Open Closed Principle.
+To avoid this violation of the SOLID principle, you can attach new responsibility to an object dynamically.
+This is the situation where the decorator design pattern comes into the picture and addresses this issue
+in a very flexible way.
+
+Dinesh Rajput. Spring 5 Design Patterns (Kindle Locations 2032-2037). Packt.
