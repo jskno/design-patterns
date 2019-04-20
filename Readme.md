@@ -1,5 +1,4 @@
 
-
 Creational Design Patterns
 
 Structural Design Patterns
